@@ -5,7 +5,7 @@
 }
 body {
     font-family: Comic Sans MS, sans-serif;
-    background: blue;
+    background: rgb(184, 253, 255);
 }
 
 h1 {
@@ -27,7 +27,7 @@ h1 {
 
 .about-text {
     flex: 1;
-    color: rgb(97, 205, 241);
+    color: rgb(17, 183, 238);
 }
 
 .about-text h3 {
