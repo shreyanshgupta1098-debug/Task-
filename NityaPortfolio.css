@@ -8,6 +8,19 @@ body {
     background: rgb(184, 253, 255);
 }
 
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
 h1 {
     text-align: start;
     color: black;
