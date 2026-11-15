@@ -1,5 +1,6 @@
 * {
-    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,13 +13,25 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 25px;
+    border-bottom: 1px solid gray;
+    height: 50px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
 }
 
 nav {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
 }
 
 h1 {
@@ -28,6 +41,7 @@ h1 {
     margin-top: 10px;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .about-container {
@@ -41,6 +55,7 @@ h1 {
 .about-text {
     flex: 1;
     color: rgb(17, 183, 238);
+    margin-bottom: 20px;
 }
 
 .about-text h3 {
@@ -81,4 +96,56 @@ h4{
     font-size: 20px;
     margin: 2px 10px 10px 10px;
     background-color: rgb(105, 105, 241);
+}
+
+/* Dark Blue Theme */
+body {
+    background-color: #102a43;
+    color: #eaf6ff;
+    transition: 0.3s;
+}
+
+h1 {
+    color: #eaf6ff;
+}
+
+.about-text {
+    color: #66d9ef;
+}
+
+.about-text h3 {
+    background-color: #24476b;
+    color: #8be9fd;
+}
+
+/* Light Blue Theme */
+body.light {
+    background-color: rgb(184, 253, 255);
+    color: black;
+}
+
+body.light h1 {
+    color: black;
+}
+
+body.light .about-text {
+    color: rgb(17, 183, 238);
+}
+
+body.light .about-text h3 {
+    background-color: #c9c9c9;
+    color: #5145ff;
+}
+
+nav a {
+    color: #eaf6ff;
+    text-decoration: none;
+}
+
+body.light nav a {
+    color: #102a43;
+}
+
+nav a:hover {
+    color: #66d9ef;
 }
