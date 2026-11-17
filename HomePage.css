@@ -102,9 +102,44 @@ body.light .member {
     background-color: #eeeeee;
 }
 
-/* Responsive */
-@media (max-width: 700px) {
+/* Tablet */
+@media (max-width: 992px) {
     .team-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .member img {
+        width: 200px;
+        height: 200px;
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    .member {
+        width: 100%;
+    }
+
+    .member img {
+        width: 180px;
+        height: 180px;
+        max-width: 100%;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .heading h3 {
+        font-size: 16px;
     }
 }
