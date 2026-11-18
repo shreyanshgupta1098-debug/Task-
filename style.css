@@ -1,0 +1,115 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Comic Sans MS, sans-serif;
+    background: rgb(184, 253, 255);
+    color: black;
+    transition: 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+}
+
+h1 {
+    text-align: start;
+    color: black;
+    font-size: 40px;
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    color: purple;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    color: rgb(17, 183, 238);
+}
+
+.about-text h3 {
+    display: inline-block;
+    background-color: #c9c9c9;
+    color: #5145ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.about-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+h4 {
+    color: purple;
+    font-size: 20px;
+    margin: 20px 10px;
+    background-color: rgb(105, 105, 241);
+    padding: 10px;
+}
+
+/* Dark Mode */
+
+.dark {
+    background: #222;
+    color: white;
+}
+
+.dark h1,
+.dark nav a {
+    color: white;
+}
+
+.dark .about-text {
+    color: lightblue;
+}
+
+.dark h2 {
+    color: violet;
+}
