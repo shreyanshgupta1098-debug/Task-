@@ -1,0 +1,187 @@
+* {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Comic Sans MS, sans-serif;
+    background: rgb(184, 253, 255);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 25px;
+    border-bottom: 1px solid gray;
+    height: 50px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    text-align: start;
+    color: black;
+    font-size: 40px;
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    color: rgb(17, 183, 238);
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    display: inline-block;
+    background-color: #c9c9c9;
+    color: #5145ff;
+    padding: 10px 10px;
+    border-radius: 6px;
+    margin: 0 0 20px 0px;
+}
+
+.about-text p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.about-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid white;
+    order: 2;
+}
+
+
+.about-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    justify-content: flex-end;
+    border : 2px solid white;
+    align-items: flex-end;
+}
+
+h4{
+    display: wide;
+    color: rgb(177, 3, 177);
+    font-size: 20px;
+    margin: 2px 10px 10px 10px;
+    background-color: rgb(105, 105, 241);
+}
+
+/* Dark Blue Theme */
+body {
+    background-color: #102a43;
+    color: #eaf6ff;
+    transition: 0.3s;
+}
+
+h1 {
+    color: #eaf6ff;
+}
+
+.about-text {
+    color: #66d9ef;
+}
+
+.about-text h3 {
+    background-color: #24476b;
+    color: #8be9fd;
+}
+
+/* Light Blue Theme */
+body.light {
+    background-color: rgb(184, 253, 255);
+    color: black;
+}
+
+body.light h1 {
+    color: black;
+}
+
+body.light .about-text {
+    color: rgb(17, 183, 238);
+}
+
+body.light .about-text h3 {
+    background-color: #c9c9c9;
+    color: #5145ff;
+}
+
+nav a {
+    color: #eaf6ff;
+    text-decoration: none;
+}
+
+body.light nav a {
+    color: #102a43;
+}
+
+nav a:hover {
+    color: #66d9ef;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+}
